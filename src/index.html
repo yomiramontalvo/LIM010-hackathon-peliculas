@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latin Movie</title>
+  <link rel="icon" type="image/png" href="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body>
+  <header id="header" class="">
+    <section id="search-by-name" class="hide">
+      <input type="text" class="search" placeholder="Busca por nombre" id="buscador" />
+      <a id="buscar" href="#"><i class="fa fa-search search-icon"></i></a>
+    </section>
+    <section id=logo>
+      <img src="./img/logo.png" alt="imagen logotipo" />
+    </section>
+    <section class="head">
+      <!--<img id="logo-pok" alt="pokeball-go" src="" />-->
+      <section class="menuNav">
+        <a class="menu" id="recommended" href="#">Recomendados</a>
+        <a class="menu" id="movies" href="#">Peliculas</a>
+        <a id="botonBuscar" class="menu" href="#"><i class="fa fa-search search-icon"></i>Buscar</a>
+      </section>
+    </section>
+
+
+    <!--<input type="text" id="buscador">
+        <button id="buscar">Buscar</button>-->
+  </header>
+
+  <main>
+    <section id="filters" class="filters">
+        <section class=" box1 box">
+      <select name="countries" id="countries">
+        <option value="0">Todos</option>
+        <option value="Peru">Perú</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Chile">Chile</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Venezuela">Venezuela</option>
+      </select>
+    </section> 
+    <section class=" box2 box">
+      <select id="gender">
+        <option value="Musical">Musical</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama"> Drama</option>
+        <option value="N/A">N/A</option>
+        <option value="Action">Action</option>
+        <option value="Horror"> Horror</option>
+        <option value="Biography">Biography</option>
+        <option value="Comedy"> Comedy</option>
+        <option value="Horror">Horror</option>
+        <option value="Animation">Animation</option>
+        <option value="Adventure"> Adventure</option>
+        <option value="Thriller"> Thriller</option>
+        <option value="Family"> Family</option>
+        <option value="Fantasy"> Fantasy</option>
+        <option value="Music"> Music</option>
+        <option value="Mystery"> Mystery</option>
+        <option value="Family">Family</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Crime">Crime</option>
+        <option value="Romance"> Romance</option>
+        <option value="Documentary">Documentary</option>
+       </select> 
+      </section>
+    </section>
+    <div class="hide" id="container"></div>
+    <div class="hide" id="containerImdb"></div>
+    <button id="up" class="hide"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></button>
+    <section id="carousel" class="">
+      <div class="carousel-conteiner" id="cards-movie">
+        <div class="carousel-slide">
+        </div>
+      </div>
+      <button id="preBtn">PREV</button>
+      <button id="nextBtn">NEXT</button>
+    </section>
+
+    <div id="modal" class="modal hide">
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <div id="info-movie" class="info"></div>
+        </div>
+    </div>
+
+      
+
+
+  </main>
+  <footer id="footer" class="">
+    <p>Copyright &#169;2019 AYI | DV | ETR | YC . All Rights Reserved.</p>
+    <p>
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    </p>
+  </footer>
+  <script src="./data/movies.js"></script>
+  <script src="main.js"></script>
+  <script src="data.js"></script>
+
+
+</body>
+
+</html>
